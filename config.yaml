@@ -1,0 +1,122 @@
+baseurl: https://shadowrz.github.io
+languageCode: zh-cn
+theme: stack
+paginate: 5
+title: 恋叶幻空间
+
+# Change it to your Disqus shortname before using
+# disqusShortname: hugo-theme-stack
+
+# Theme i18n support
+# Available values: en, fr, id, ja, ko, pt-br, zh-cn
+DefaultContentLanguage: zh-cn
+
+permalinks:
+    post: /posts.d/:year/:month/:day/:filename
+    page: /:filename
+uglyurls: true
+
+params:
+    mainSections:
+        - post
+    featuredImageField: image
+    rssFullContent: true
+    favicon:
+
+    footer:
+        since: 2020
+        customText: 
+
+    dateFormat:
+        published: Jan 02, 2006
+        lastUpdated: Jan 02, 2006 15:04 MST
+
+    sidebar:
+        emoji: 😅
+        subtitle: '所有写给自己的印象已经存在了吧'
+        avatar:
+            local: true
+            src: img/avatar.png
+
+    article:
+        math: false
+        license:
+            enabled: true
+            default: Licensed under CC BY 4.0
+
+    comments:
+        enabled: false
+        provider: disqus
+        utterances:
+            repo:
+            issueTerm: pathname
+            label:
+            theme: preferred-color-scheme
+
+    widgets:
+        enabled:
+            - search
+            - archives
+
+        archives:
+            limit: 5
+
+    defaultImage:
+        opengraph:
+            enabled: false
+            local: false
+            src:
+
+    colorScheme:
+        # Display toggle
+        toggle: true
+
+        # Available values: auto, light, dark
+        default: auto
+
+    imageProcessing:
+        cover:
+            enabled: true
+        content:
+            enabled: true
+
+menu:
+    main:
+        - identifier: home
+          name: 主页
+          url: /
+          weight: -100
+          pre: home
+
+        - identifier: about
+          name: 关于
+          url: about.html
+          weight: -90
+          pre: user
+
+        - identifier: archives
+          name: 归档
+          url: archives.html
+          weight: -70
+          pre: archives
+
+        - identifier: search
+          name: 搜索
+          url: search.html
+          weight: -60
+          pre: search
+
+related:
+    includeNewer: true
+    threshold: 60
+    toLower: false
+    indices:
+        - name: tags
+          weight: 100
+
+        - name: categories
+          weight: 200
+
+markup:
+    highlight:
+        noClasses: false
