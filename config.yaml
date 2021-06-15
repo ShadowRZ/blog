@@ -1,18 +1,17 @@
 baseurl: https://shadowrz.github.io
 languageCode: zh-cn
 theme: stack
-paginate: 5
+paginate: 20
 title: 恋叶幻空间
+subtitle: 所有写给自己的印象已经存在了吧
 
-# Change it to your Disqus shortname before using
-# disqusShortname: hugo-theme-stack
+# Disqus Support
+# disqusShortname: futaba-sakura
 
-# Theme i18n support
-# Available values: en, fr, id, ja, ko, pt-br, zh-cn
 DefaultContentLanguage: zh-cn
 
 permalinks:
-    post: /posts.d/:year/:month/:day/:filename
+    post: /posts/:year-:month-:day-:filename
     page: /:filename
 uglyurls: true
 
@@ -32,7 +31,7 @@ params:
         lastUpdated: 2006-01-02 15:04:05 MST
 
     sidebar:
-        emoji: 🙃
+        emoji: 🗝️
         subtitle: '所有写给自己的印象已经存在了吧'
         avatar:
             local: true
@@ -45,12 +44,12 @@ params:
             default: Licensed under CC BY 4.0
 
     comments:
-        enabled: false
-        provider: disqus
+        enabled: true
+        provider: utterances
         utterances:
-            repo:
+            repo: ShadowRZ/shadowrz.github.io
             issueTerm: pathname
-            label:
+            label: comment
             theme: preferred-color-scheme
 
     widgets:
@@ -90,25 +89,25 @@ menu:
 
         - identifier: about
           name: 关于
-          url: about.html
+          url: /about.html
           weight: -90
           pre: user
 
         - identifier: archives
           name: 归档
-          url: archives.html
+          url: /archives.html
           weight: -70
           pre: archives
 
         - identifier: links
           name: 链接
-          url: links.html
+          url: /links.html
           weight: -60
           pre: link
 
         - identifier: search
           name: 搜索
-          url: search.html
+          url: /search.html
           weight: -50
           pre: search
 
