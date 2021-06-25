@@ -58,7 +58,7 @@ params:
             - archives
 
         archives:
-            limit: 5
+            limit: 20
 
     defaultImage:
         opengraph:
@@ -87,30 +87,6 @@ menu:
           weight: -100
           pre: home
 
-        - identifier: about
-          name: 关于
-          url: /about.html
-          weight: -90
-          pre: user
-
-        - identifier: archives
-          name: 归档
-          url: /archives.html
-          weight: -70
-          pre: archives
-
-        - identifier: links
-          name: 链接
-          url: /links.html
-          weight: -60
-          pre: link
-
-        - identifier: search
-          name: 搜索
-          url: /search.html
-          weight: -50
-          pre: search
-
 related:
     includeNewer: true
     threshold: 60
@@ -123,5 +99,9 @@ related:
           weight: 200
 
 markup:
+    tableOfContents:
+        endLevel: 4
+        ordered: true
+        startLevel: 2
     highlight:
         noClasses: false
