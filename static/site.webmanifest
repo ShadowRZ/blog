@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "\u591c\u5742\u96c5\u7684\u5c0f\u5730\u65b9\uff1f",
+    "short_name": "\u591c\u5742\u96c5\u7684\u5c0f\u5730\u65b9\uff1f",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -12,7 +12,5 @@
             "sizes": "384x384",
             "type": "image/png"
         }
-    ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff"
+    ]
 }
