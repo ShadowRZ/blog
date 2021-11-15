@@ -13,7 +13,7 @@ DefaultContentLanguage: zh-cn
 hasCJKLanguage: true
 
 permalinks:
-    post: /posts/:year-:month-:day-:filename
+    post: /posts/:year-:month-:day-:slug
     page: /:filename
 uglyurls: true
 

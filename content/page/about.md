@@ -17,4 +17,4 @@ menu:
 
 * Name: ShadowRZ
 * URL: https://shadowrz.github.io
-* Avatar: https://ouo.wxw.moe/accounts/avatars/000/042/613/original/c154d5eb334179f2.png (缓存推荐，也可使用 GitHub 头像)
+* Avatar: https://i.loli.net/2021/10/02/IlyU3fRipF9PsNK.png (缓存推荐，也可使用 GitHub 头像)
