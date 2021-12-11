@@ -105,7 +105,8 @@ menu:
           name: 主页
           url: /
           weight: -100
-          pre: home
+          params:
+              icon: home
 
 related:
     includeNewer: true

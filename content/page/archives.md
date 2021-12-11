@@ -7,5 +7,6 @@ menu:
     main:
         name: 归档
         weight: -70
-        pre: archives
+        params:
+            icon: archives
 ---
