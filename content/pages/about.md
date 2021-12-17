@@ -1,12 +1,10 @@
 ---
-title: "¶ 关于"
+title: "关于"
 description: "（以下内容基本都是暂定）"
 menu:
     main:
         name: 关于
         weight: -90
-        params:
-            icon: user
 ---
 
 纯粹的 P5 迷，对世界有着一部分自己的理解，并没有绝对确定的形态。  
