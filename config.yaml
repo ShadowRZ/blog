@@ -18,7 +18,6 @@ hasCJKLanguage: true
 
 permalinks:
     posts: /posts/:year-:month-:day-:slug
-    pages: /:filename
 uglyurls: true
 
 outputs:
