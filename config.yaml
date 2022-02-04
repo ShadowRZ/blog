@@ -17,7 +17,7 @@ minify:
 hasCJKLanguage: true
 
 permalinks:
-    posts: /posts/:year-:month-:day-:slug
+    posts: /posts/:filename
 uglyurls: true
 
 outputs:
@@ -45,6 +45,8 @@ params:
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
     ShowToc: true
+    UseHugoToc: true
+    ShowWordCount: true
     comments: true
     # images: ["papermod-cover.png"]
 

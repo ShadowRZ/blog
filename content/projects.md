@@ -5,6 +5,7 @@ menu:
     main:
         name: 项目
         weight: -50
+ShowToc: false
 ---
 
 ## Minoko Novel

@@ -5,6 +5,7 @@ menu:
     main:
         name: 关于
         weight: -90
+ShowToc: false
 ---
 
 纯粹的 P5 迷，对世界有着一部分自己的理解，并没有绝对确定的形态。  
