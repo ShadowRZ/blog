@@ -2,8 +2,8 @@ baseurl: https://yorusakamiyabi.tk
 languageCode: zh-cn
 theme: PaperMod
 paginate: 20
-title: 夜坂雅的小博客？
-subtitle: 随意叙写的故事们
+title: "いちのせ みのり"
+subtitle: &subtitle "虽然名字奇怪，但这里就是 @ShadowRZ 的部落格"
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -31,7 +31,7 @@ params:
         - posts
     dateFormat: 2006-01-02
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "夜坂雅的小博客？"
+    description: "いちのせ みのり"
     author: 夜坂雅
     # author: ["Me", "You"] # multiple authors
 
@@ -64,8 +64,8 @@ params:
               url: tags
 
     homeInfoParams:
-        Title: "夜坂雅的小博客？"
-        Content: 随意叙写的故事们
+        Title: "いちのせ みのり（キュアパパイア）"
+        Content: *subtitle
 
     socialIcons:
         - name: RSS
