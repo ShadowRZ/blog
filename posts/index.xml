@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on いちのせ みのり</title>
+    <link>https://shadowrz.github.io/blog/posts/</link>
+    <description>Recent content in Posts on いちのせ みのり</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 04 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://shadowrz.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022-02-04</title>
+      <link>https://shadowrz.github.io/blog/posts/2022-02-04.html</link>
+      <pubDate>Fri, 04 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://shadowrz.github.io/blog/posts/2022-02-04.html</guid>
+      <description>2022-02-04</description>
+    </item>
+    
+    <item>
+      <title>My life [2021-11-15]</title>
+      <link>https://shadowrz.github.io/blog/posts/2021-11-15-my-life.html</link>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://shadowrz.github.io/blog/posts/2021-11-15-my-life.html</guid>
+      <description>My life [2021-11-15]</description>
+    </item>
+    
+    <item>
+      <title>一个重启</title>
+      <link>https://shadowrz.github.io/blog/posts/2021-01-26-a-restart.html</link>
+      <pubDate>Tue, 26 Jan 2021 01:57:48 +0000</pubDate>
+      
+      <guid>https://shadowrz.github.io/blog/posts/2021-01-26-a-restart.html</guid>
+      <description>从 Jekyll 到 Hugo</description>
+    </item>
+    
+  </channel>
+</rss>
