@@ -2,8 +2,8 @@ baseurl: https://shadowrz.github.io/blog/
 languageCode: zh-cn
 theme: PaperMod
 paginate: 20
-title: "いちのせ みのり"
-subtitle: &subtitle "虽然名字奇怪，但这里就是 @ShadowRZ 的部落格"
+title: &title "RC0S % Blog"
+subtitle: &subtitle "世界本身就是我存在于此处的意义"
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -31,7 +31,7 @@ params:
         - posts
     dateFormat: 2006-01-02
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "いちのせ みのり"
+    description: *title
     author: 夜坂雅
     # author: ["Me", "You"] # multiple authors
 
@@ -64,7 +64,7 @@ params:
               url: tags
 
     homeInfoParams:
-        Title: "いちのせ みのり（キュアパパイア）"
+        Title: *title
         Content: *subtitle
 
     socialIcons:
