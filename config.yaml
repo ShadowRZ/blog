@@ -3,7 +3,7 @@ languageCode: zh-cn
 theme: PaperMod
 paginate: 20
 title: &title "RC0S % Blog"
-subtitle: &subtitle "世界本身就是我存在于此处的意义"
+subtitle: &subtitle "A place for Yoursaka Miyabi"
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -25,6 +25,8 @@ outputs:
         - HTML
         - RSS
         - JSON
+
+copyright: 2021-2022 夜坂雅
 
 params:
     mainSections:
