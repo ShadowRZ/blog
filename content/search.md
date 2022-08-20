@@ -4,8 +4,11 @@ slug: "search"
 layout: "search"
 outputs:
     - html
+    - json
 menu:
     main:
-        name: 搜索
+        name: Search
         weight: -40
+        params:
+            icon: search
 ---

@@ -1,9 +1,0 @@
-<div id="waline"></div>
-{{- $waline := resources.Get "js/waline.min.js" }}
-<script src="{{ $waline.RelPermalink }}" integrity="{{ $waline.Data.Integrity }}"></script>
-<script>
-Window.WALINE_OBJECT = Waline({
-    el: '#waline',
-    serverURL: 'https://shadowrz-waline.deta.dev',
-});
-</script>
