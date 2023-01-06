@@ -3,7 +3,7 @@ languageCode: zh-cn
 theme: stack
 paginate: 20
 title: &title "RC0S % Blog"
-subtitle: &subtitle "A place for Yoursaka Miyabi"
+subtitle: &subtitle "A place for Yorusaka Miyabi"
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
