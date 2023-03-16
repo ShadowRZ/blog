@@ -86,15 +86,14 @@ params:
 
         # Waline client configuration see: https://waline.js.org/en/reference/component.html
         waline:
-            serverURL: https://shadowrz-waline.deta.dev
+            serverURL: https://waline-1-t1899993.deta.app
             lang:
             pageview:
             emoji:
                 - https://unpkg.com/@waline/emojis@1.0.1/weibo
             requiredMeta:
-                - name
+                - nick
                 - email
-                - url
             locale:
                 admin: Admin
                 placeholder:
