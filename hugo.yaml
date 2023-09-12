@@ -1,6 +1,5 @@
 baseurl: https://shadowrz.github.io/blog/
 languageCode: zh-cn
-theme: stack
 paginate: 20
 title: &title "RC0S % Blog"
 subtitle: &subtitle "A place for Yorusaka Miyabi"
@@ -269,3 +268,8 @@ related:
 
         - name: categories
           weight: 200
+
+# config.yaml
+module:
+    imports:
+      - path: github.com/CaiJimmy/hugo-theme-stack/v3
