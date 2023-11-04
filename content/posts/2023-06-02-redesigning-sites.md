@@ -2,6 +2,7 @@
 title: "Redesigning sites, 2023"
 date: 2023-06-02
 description: "Tailwind CSS is fun :P"
+author: "shadowrz"
 ---
 
 So here we go.

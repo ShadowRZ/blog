@@ -2,6 +2,7 @@
 title: "New Beginning"
 date: 2023-04-08
 description: "A proposed beginning of my original plot."
+author: "shadowrz"
 ---
 
 > 當然，這是某一小說的開頭，還是很不錯的，三位妄想構造者擁有能力，可以通過妄想創造出其他的東西。希望你能繼續寫下去。這大概是我的評價，還是很不錯的，雖然可能我說的問題比較多，構建了這麼一個故事還是漫遊趣的。

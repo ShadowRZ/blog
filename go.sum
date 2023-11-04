@@ -1,2 +1,6 @@
-github.com/CaiJimmy/hugo-theme-stack/v3 v3.20.0 h1:HcDBhvXj1GJtFEN3lqkmLEULWYu5ycp4KV9v8fQ5s2s=
-github.com/CaiJimmy/hugo-theme-stack/v3 v3.20.0/go.mod h1:IPmCXiIxlFSLFYS0tOmYP6ySLviyeNVSabyvSuaxD+I=
+github.com/ShadowRZ/hugo-theme-bookworm-light v0.0.0-20231104152705-0ba0b83685f5 h1:QjhW2OOpFOGcqnLMsJUIJSOLFs3oVgtiEQW4z62mLJM=
+github.com/ShadowRZ/hugo-theme-bookworm-light v0.0.0-20231104152705-0ba0b83685f5/go.mod h1:Nv8FNc3G9BV3KIwlkuM4kVqRnsUVvFyw5PVug9Q+S0U=
+github.com/gethugothemes/bookworm-light v1.1.0 h1:zLvNS0g1lnjcLOwftEZW+kr6Uq1ZgKeKd9BfexAhZBs=
+github.com/gethugothemes/bookworm-light v1.1.0/go.mod h1:zHQzwUnft0Orkj1URRK2allQZAQSNe5aeTaPOm1p3BA=
+github.com/gethugothemes/bookworm-light v1.1.1-0.20230912025756-7dba8af8d7ee h1:yjwF/Q/gq06ffUZSJc/2dVxnYf4wUs7qysbOCNo+LRw=
+github.com/gethugothemes/bookworm-light v1.1.1-0.20230912025756-7dba8af8d7ee/go.mod h1:2Bou8F6dQYCPdcPoj5nYO3Th5ArKqxDBlS/dddqXTJM=
