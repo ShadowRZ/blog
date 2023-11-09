@@ -4,7 +4,6 @@ date: 2023-01-15
 description: "About the downloads management permission in CLEAN crxMouse Gestures"
 tags: [Chrome]
 categories: ["Random Journeys"]
-author: "shadowrz"
 ---
 
 Users of [CLEAN crxMouse Gestures](https://chrome.google.com/webstore/detail/clean-crxmouse-gestures/mjidkpedjlfnanainpdfnedkdlacidla) are probably confused when an update brings this:
