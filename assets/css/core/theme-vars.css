@@ -7,26 +7,26 @@
     --footer-height: 60px;
     --radius: 8px;
     --theme: #fdf2f8;
-    --entry: #fdf2f8;
+    --entry: #fce7f3;
     --primary: #9d174d;
     --secondary: #ec4899;
     --tertiary: #fce7f3;
     --content: #9d174d;
     --hljs-bg: rgb(28, 29, 33);
-    --code-bg: #fbcfe8;
-    --border: #f9a8d4;
+    --code-bg: #fce7f3;
+    --border: transparent;
 }
 
 .dark {
     --theme: #500724;
-    --entry: #500724;
+    --entry: #831843;
     --primary: #fbcfe8;
     --secondary: #f9a8d4;
     --tertiary: #831843;
     --content: #fbcfe8;
     --hljs-bg: rgb(46, 46, 51);
     --code-bg: #9d174d;
-    --border: #be185d;
+    --border: transparent;
 }
 
 .list {
