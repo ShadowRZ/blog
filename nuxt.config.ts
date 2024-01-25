@@ -1,0 +1,62 @@
+// https://nuxt.com/docs/guide/directory-structure/nuxt.config#nuxt-config-file
+export default defineNuxtConfig({
+  app: {
+    baseURL: '/blog/',
+    head: {
+      meta: [
+        {
+          name: "theme-color",
+          content: "#9D174D"
+        }
+      ],
+      link: [
+        {
+          rel: 'icon',
+          href: '/favicon-16-16.png',
+          sizes: '16x16',
+          type: 'image/png'
+        },
+        {
+          rel: 'icon',
+          href: '/favicon-32x32.png',
+          sizes: '32x32',
+          type: 'image/png'
+        },
+        {
+          rel: 'apple-touch-icon',
+          href: '/apple-touch-icon.png'
+        },
+        {
+          rel: 'manifest',
+          href: '/blog/site.webmanifest'
+        }
+      ]
+    },
+  },
+  typescript: {
+    strict: true,
+  },
+  devtools: { enabled: true },
+  modules: [
+    "@nuxt/content",
+    '@nuxt/image',
+    "@nuxtjs/color-mode",
+    "@vueuse/nuxt",
+    "@unocss/nuxt",
+    "nuxt-icon"
+  ],
+  colorMode: {
+    classSuffix: ''
+  },
+  nitro: {
+    prerender: {
+      autoSubfolderIndex: false // XXX
+    }
+  },
+  content: {
+    documentDriven: true,
+    highlight: {
+      theme: 'nord'
+    }
+  }
+})
