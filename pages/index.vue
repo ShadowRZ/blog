@@ -62,7 +62,7 @@ useSeoMeta({
             is="h2"
             font="bold"
             text="3xl xl:5xl"
-            class="bg-underline-large"
+            class="bg-underline-large inline"
             >{{ page.title }}</WithUnderline
           ></NuxtLink
         >
