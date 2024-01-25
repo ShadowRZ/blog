@@ -28,7 +28,7 @@ useSeoMeta({
             <Icon name="ph:calendar-duotone" />
             <span sr-only>Publish Date: </span>
             <time :datetime="page.date" font="bold">{{
-              new Date(page.date).toDateString()
+              page.date ? new Date(page.date).toDateString() : '(Working)'
             }}</time>
           </div>
           <template v-if="page.categories" inline-flex gap="1">

@@ -27,7 +27,7 @@ From a developer's perspective, to manage downloads you need to invoke [`chrome.
 
 So I did a search:
 
-```js
+```console
 $ rg chrome.downloads
 js/background.js
 1022:        chrome.downloads.download({

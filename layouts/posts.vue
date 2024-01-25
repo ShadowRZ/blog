@@ -15,23 +15,27 @@ const { page } = useContent()
         <Icon name="ph:calendar-duotone" />
         <span sr-only>Publish Date: </span>
         <time :datetime="page.date" font="bold">{{
-          new Date(page.date).toDateString()
+          page.date ? new Date(page.date).toDateString() : '(Working)'
         }}</time>
       </div>
-      <div v-if="page.categories" inline-flex gap="1" items="center">
-        <Icon name="ph:folders-duotone" />
-        <span sr-only>Categories: </span>
-        <ul font="bold" flex="~ row" gap="1">
-          <li v-for="category in page.categories">{{ category }}</li>
-        </ul>
-      </div>
-      <div v-if="page.tags" inline-flex gap="1" items="center">
-        <Icon name="ph:tag-duotone" />
-        <span sr-only>Tags: </span>
-        <ul font="bold" flex="~ row" gap="1">
-          <li v-for="tag in page.tags">{{ tag }}</li>
-        </ul>
-      </div>
+      <template v-if="page.categories" inline-flex gap="1">
+        <div v-for="category in page.categories" inline-flex gap="1" items="center">
+          <Icon name="ph:folders-duotone" />
+          <span sr-only>Category: </span>
+          <ul font="bold" flex="~ row" gap="1">
+            <li>{{ category }}</li>
+          </ul>
+        </div>
+      </template>
+      <template v-if="page.tags" inline-flex gap="1">
+        <div v-for="tag in page.tags" inline-flex gap="1" items="center">
+          <Icon name="ph:tag-duotone" />
+          <span sr-only>Tag: </span>
+          <ul font="bold" flex="~ row" gap="1">
+            <li>{{ tag }}</li>
+          </ul>
+        </div>
+      </template>
     </div>
     <main grow prose max-w-full>
       <h1 font="bold">{{ page.title }}</h1>

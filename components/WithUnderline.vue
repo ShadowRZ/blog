@@ -6,7 +6,7 @@ const props = defineProps<{
 
 <template>
   <component
-    style="background-position-y: 100%"
+    style="background-position-y: 85%"
     from="50% pink-400 dark:pink-700"
     to="50% pink-200 dark:pink-900"
     bg="gradient-to-r no-repeat underline-start hover:underline-end"
