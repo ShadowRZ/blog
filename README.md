@@ -1,6 +1,6 @@
-# Content v2 Minimal Starter
+# @ShadowRZ's Blog
 
-Look at the [Content documentation](https://content.nuxt.com/) to learn more.
+Powered by [Nuxt](https://nuxt.com) and [Nuxt Content](https://content.nuxt.com), for the base layout see [`ShadowRZ/bitfield-scaffold`](https://github.com/ShadowRZ/bitfield-scaffold)
 
 ## Setup
 
