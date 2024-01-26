@@ -5,6 +5,7 @@ import {
   presetUno,
   presetWebFonts,
 } from 'unocss'
+import transformerDirectives from '@unocss/transformer-directives'
 
 export default defineConfig({
   presets: [
@@ -17,7 +18,10 @@ export default defineConfig({
         'blockquote': {
           'border-left': '4px',
           'border-style': 'dashed'
-        }
+        },
+        ':not(pre) > code::before,:not(pre) > code::after': {
+          content: 'none'
+        },
       }
     }),
     presetWebFonts({
@@ -33,5 +37,8 @@ export default defineConfig({
     ['bg-underline-large', { 'background-size': '200% 16px'}],
     ['bg-underline-start', { 'background-position': '100% 100%'}],
     ['bg-underline-end', { 'background-position': '0% 100%'}]
+  ],
+  transformers: [
+    transformerDirectives(),
   ],
 })

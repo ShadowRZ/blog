@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/guide/directory-structure/nuxt.config#nuxt-config-file
 export default defineNuxtConfig({
+  extends: ['github:ShadowRZ/bitfield-scaffold'],
   app: {
     baseURL: '/blog/',
     head: {
@@ -38,12 +39,7 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   modules: [
-    "@nuxt/content",
-    '@nuxt/image',
-    "@nuxtjs/color-mode",
-    "@vueuse/nuxt",
-    "@unocss/nuxt",
-    "nuxt-icon"
+    '@nuxt/image'
   ],
   colorMode: {
     classSuffix: ''
@@ -51,12 +47,6 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       autoSubfolderIndex: false // XXX
-    }
-  },
-  content: {
-    documentDriven: true,
-    highlight: {
-      theme: 'nord'
     }
   }
 })

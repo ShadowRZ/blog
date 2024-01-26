@@ -1,0 +1,10 @@
+title: "@ShadowRZ's Blog"
+description: "Where something happens."
+layout: listing
+metas: true
+query:
+  path: "/posts"
+  sort:
+    - date: -1
+  where:
+    - _partial: false
