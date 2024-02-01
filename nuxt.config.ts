@@ -38,15 +38,39 @@ export default defineNuxtConfig({
     strict: true,
   },
   devtools: { enabled: true },
-  modules: [
-    '@nuxt/image'
-  ],
+  modules: ['@nuxt/image', "nuxt-feedme"],
   colorMode: {
     classSuffix: ''
   },
   nitro: {
     prerender: {
       autoSubfolderIndex: false // XXX
+    }
+  },
+  feedme: {
+    feeds: {
+      '/feed.xml': { revisit: '6h', type: 'atom1' },
+      '/feed.json': { revisit: '6h', type: 'json1', content: true },
+    },
+    content: {
+      feed: {
+        defaults: {
+          id: 'https://shadowrz.github.io/blog/',
+          title: '@ShadowRZ\'s Blog',
+          description: 'Where something happens.',
+          link: 'https://shadowrz.github.io/blog/'
+        },
+      },
+      item: {
+        query: {
+          path: '/posts',
+          sort: [ { date: -1 }],
+          where: [ { _partial: false }, { layout: { $ne: 'listing' }} ]
+        },
+        mapping: [
+          ['link', '_path']
+        ],
+      }
     }
   }
 })
