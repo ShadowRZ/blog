@@ -70,7 +70,10 @@ export default defineNuxtConfig({
         mapping: [
           ['link', '_path']
         ],
-      }
+      },
+      tags: [
+        [/^(?=\/)/, 'https://shadowrz.github.io/blog'],
+      ],
     }
   }
 })
