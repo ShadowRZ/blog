@@ -24,6 +24,7 @@
     "@vueuse/nuxt": "^10.11.0",
     "nuxt": "^3.12.4",
     "nuxt-feedme": "^1.0.0",
+    "prettier": "^3.3.3",
     "remark-reading-time": "^2.0.1",
     "typescript": "^5.4.5",
     "vue-tsc": "^2.0.21"

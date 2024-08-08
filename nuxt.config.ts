@@ -7,32 +7,32 @@ export default defineNuxtConfig({
     head: {
       meta: [
         {
-          name: "theme-color",
-          content: "#9D174D"
-        }
+          name: 'theme-color',
+          content: '#9D174D',
+        },
       ],
       link: [
         {
           rel: 'icon',
           href: '/favicon-16-16.png',
           sizes: '16x16',
-          type: 'image/png'
+          type: 'image/png',
         },
         {
           rel: 'icon',
           href: '/favicon-32x32.png',
           sizes: '32x32',
-          type: 'image/png'
+          type: 'image/png',
         },
         {
           rel: 'apple-touch-icon',
-          href: '/apple-touch-icon.png'
+          href: '/apple-touch-icon.png',
         },
         {
           rel: 'manifest',
-          href: '/blog/site.webmanifest'
-        }
-      ]
+          href: '/blog/site.webmanifest',
+        },
+      ],
     },
   },
 
@@ -41,16 +41,16 @@ export default defineNuxtConfig({
   },
 
   devtools: { enabled: true },
-  modules: ['@nuxt/image', "nuxt-feedme", "@nuxthq/studio"],
+  modules: ['@nuxt/image', 'nuxt-feedme', '@nuxthq/studio'],
 
   colorMode: {
-    classSuffix: ''
+    classSuffix: '',
   },
 
   nitro: {
     prerender: {
-      autoSubfolderIndex: false // XXX
-    }
+      autoSubfolderIndex: false, // XXX
+    },
   },
 
   feedme: {
@@ -62,27 +62,23 @@ export default defineNuxtConfig({
       feed: {
         defaults: {
           id: 'https://shadowrz.github.io/blog/',
-          title: '@ShadowRZ\'s Blog',
+          title: "@ShadowRZ's Blog",
           description: 'Where something happens.',
-          link: 'https://shadowrz.github.io/blog/'
+          link: 'https://shadowrz.github.io/blog/',
         },
       },
       item: {
         query: {
           path: '/posts',
-          sort: [ { date: -1 }],
-          where: [ { _partial: false }, { layout: { $ne: 'listing' }} ]
+          sort: [{ date: -1 }],
+          where: [{ _partial: false }, { layout: { $ne: 'listing' } }],
         },
-        mapping: [
-          ['link', '_path']
-        ],
+        mapping: [['link', '_path']],
         templateRoots: [true, 'feedme'],
       },
-      tags: [
-        [/^(?=\/)/, 'https://shadowrz.github.io/blog'],
-      ],
-    }
+      tags: [[/^(?=\/)/, 'https://shadowrz.github.io/blog']],
+    },
   },
 
-  compatibilityDate: '2024-08-08'
-})
+  compatibilityDate: '2024-08-08',
+});
