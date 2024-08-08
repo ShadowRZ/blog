@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/guide/directory-structure/nuxt.config#nuxt-config-file
 export default defineNuxtConfig({
   extends: ['github:ShadowRZ/bitfield-scaffold'],
+
   app: {
     baseURL: '/blog/',
     head: {
@@ -34,22 +35,27 @@ export default defineNuxtConfig({
       ]
     },
   },
+
   typescript: {
     strict: true,
   },
+
   devtools: { enabled: true },
-  modules: ['@nuxt/image', "nuxt-feedme"],
+  modules: ['@nuxt/image', "nuxt-feedme", "@nuxthq/studio"],
+
   colorMode: {
     classSuffix: ''
   },
+
   nitro: {
     prerender: {
       autoSubfolderIndex: false // XXX
     }
   },
+
   feedme: {
     feeds: {
-      '/feed.xml': { revisit: '6h', type: 'atom1' },
+      '/feed.xml': { revisit: '6h', type: 'atom1', content: true },
       '/feed.json': { revisit: '6h', type: 'json1', content: true },
     },
     content: {
@@ -70,10 +76,13 @@ export default defineNuxtConfig({
         mapping: [
           ['link', '_path']
         ],
+        templateRoots: [true, 'feedme'],
       },
       tags: [
         [/^(?=\/)/, 'https://shadowrz.github.io/blog'],
       ],
     }
-  }
+  },
+
+  compatibilityDate: '2024-08-08'
 })

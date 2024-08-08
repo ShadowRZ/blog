@@ -8,7 +8,7 @@ categories: ["Random Journeys"]
 
 Users of [CLEAN crxMouse Gestures](https://chrome.google.com/webstore/detail/clean-crxmouse-gestures/mjidkpedjlfnanainpdfnedkdlacidla) are probably confused when an update brings this:
 
-![CLEAN crxMouse Gestures requires managing your downloads ???](/assets/images/crxmouse-permission-changes.jpg)
+![CLEAN crxMouse Gestures requires managing your downloads ???](/images/crxmouse-permission-changes.jpg)
 
 I'll give you an idea of why it demands this permission and my thoughts.
 
@@ -44,7 +44,7 @@ Well, it seems weird that you can only invoke a new download without opening a b
 
 But on the other side, I think the developer does a bad job on communicating about why it demands this permission. Users are confused a gesture extension would demand managing downloads.
 
-![Some user couldn't understand what's happening, and it's bad for both developer and users.](/assets/images/crxmouse-reviews.jpg)
+![Some user couldn't understand what's happening, and it's bad for both developer and users.](/images/crxmouse-reviews.jpg)
 
 From [Chrome Developer docs](https://developer.chrome.com/docs/extensions/mv3/permission_warnings/#understanding-permissions):
 
