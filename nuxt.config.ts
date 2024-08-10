@@ -41,7 +41,7 @@ export default defineNuxtConfig({
   },
 
   devtools: { enabled: true },
-  modules: ['@nuxt/image', 'nuxt-feedme', '@nuxthq/studio'],
+  modules: ['nuxt-feedme'],
 
   colorMode: {
     classSuffix: '',
