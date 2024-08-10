@@ -4,8 +4,8 @@ import {
   presetTypography,
   presetUno,
   presetWebFonts,
-} from 'unocss';
-import transformerDirectives from '@unocss/transformer-directives';
+} from 'unocss'
+import transformerDirectives from '@unocss/transformer-directives'
 
 export default defineConfig({
   presets: [
@@ -15,7 +15,7 @@ export default defineConfig({
     presetAttributify(),
     presetTypography({
       cssExtend: {
-        blockquote: {
+        'blockquote': {
           'border-left': '4px',
           'border-style': 'dashed',
         },
@@ -39,4 +39,4 @@ export default defineConfig({
     ['bg-underline-end', { 'background-position': '0% 100%' }],
   ],
   transformers: [transformerDirectives()],
-});
+})

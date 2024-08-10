@@ -62,7 +62,7 @@ export default defineNuxtConfig({
       feed: {
         defaults: {
           id: 'https://shadowrz.github.io/blog/',
-          title: "@ShadowRZ's Blog",
+          title: '@ShadowRZ\'s Blog',
           description: 'Where something happens.',
           link: 'https://shadowrz.github.io/blog/',
         },
@@ -81,4 +81,4 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2024-08-08',
-});
+})
