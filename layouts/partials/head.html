@@ -1,0 +1,77 @@
+{{ with site.Params.favicon }}
+  {{ if hasPrefix . "<link" }}
+    {{ . | safeHTML }}
+  {{ else }}
+    <link href="{{ . | relURL }}" rel="icon" type="image/x-icon" />
+  {{ end }}
+{{ end }}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jost@5.0.8/latin.css">
+<style>
+body { font-family: Jost, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important; }
+</style>
+<link rel="apple-touch-icon" href="/blog/apple-touch-icon.png">
+<link rel="icon" href="/blog/favicon-32x32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/blog/favicon-16x16.png" type="image/png" sizes="16x16">
+<link rel="manifest" href="/blog/site.webmanifest">
+<meta name="theme-color" content="#FFFFFF">
+
+<link rel="canonical" href="{{ .Permalink }}" />
+
+{{ if eq .Type "posts" }}
+<!-- Page Author & Description -->
+<meta name="author" content="{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ site.Params.author }}{{ end }}" />
+<meta name="description" content="{{ (or .Description .Summary) | plainify }}" />
+
+<!-- Keywords -->
+{{- $keywords := slice }}
+{{- with .Keywords }}
+  {{- $keywords = . }}
+{{- else }}
+  {{- range .GetTerms "tags" }}
+    {{- $keywords = $keywords | append .Title }}
+  {{- else }}
+    {{- range $taxonomy, $_ := site.Taxonomies }}
+      {{- range $.GetTerms $taxonomy }}
+        {{- $keywords = $keywords | append .Title }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+<meta name="keywords" content="{{ delimit $keywords `,` }}">
+{{ else }}
+<!-- Site Author & Description -->
+<meta name="author" content="{{ site.Params.author }}" />
+<meta name="description" content="{{ site.Params.description | plainify }}" />
+{{ end }}
+
+<!-- Site Generator -->
+{{ hugo.Generator }}
+
+<!-- Open Graph -->
+{{ template "_internal/opengraph.html" . }}
+
+<!-- Twitter Cards -->
+{{ template "_internal/twitter_cards.html" . }}
+
+{{ $outputCss := resources.Get "css/output.css" }}
+{{ if hugo.IsProduction }}
+  {{ $outputCss = $outputCss | minify }}
+{{ end }}
+<link rel="stylesheet" href="{{ $outputCss.RelPermalink }}" />
+
+{{ if or site.Params.backgroundImage site.Params.backgroundImageDark }}
+<style>
+{{ if site.Params.backgroundImage }}
+#dream-global-bg {
+  background-image: url({{ site.Params.backgroundImage | relURL }});
+}
+{{ end }}
+
+{{ if site.Params.backgroundImageDark }}
+html.dark #dream-global-bg {
+  background-image: url({{ site.Params.backgroundImageDark | relURL }});
+}
+{{ end }}
+</style>
+{{ end }}
