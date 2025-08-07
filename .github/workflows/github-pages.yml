@@ -41,11 +41,11 @@ jobs:
       - name: Build
         run: hugo --minify
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: 'public'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@main
+        uses: actions/deploy-pages@v4
 
 # vim:ts=2:sw=2:et
