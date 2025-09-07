@@ -1,0 +1,10 @@
+{{ define "title" }}{{ .Data.Singular | strings.FirstUpper }}: {{ .Title }} | {{ site.Title }}{{ end }}
+{{ define "main" }}
+<section class="section container">
+  <span class="title is-2 is-primary icon-text">
+    <span class="ph--cube-duotone"></span>
+    <span>{{ .Data.Singular | strings.FirstUpper }}: {{ .Title }}</span>
+  </span>
+</section>
+{{ partial "list/posts.html" .Pages }}
+{{ end }}

@@ -1,7 +1,7 @@
 baseurl = "https://shadowrz.github.io/blog/"
 languageCode = "zh-cn"
 title = "@ShadowRZ's Blog"
-subtitle = "A Place Somewhere"
+subtitle = "Where something happens."
 
 enableInlineShortcodes = true
 enableRobotsTXT = true
@@ -30,19 +30,3 @@ baseName = "feed"
 
 [markup.goldmark.renderer]
 unsafe = true
-
-[[module.imports]]
-path = "github.com/g1eny0ung/hugo-theme-dream"
-
-# Theme params
-[params]
-env = "production"
-lightTheme = "pastel"
-darkTheme = "sunset"
-noDefaultSummaryCover = true
-author = "ShadowRZ"
-avatar = "images/avatar.png"
-headerTitle = "@ShadowRZ's Blog"
-motto = "A Place Somewhere"
-siteStartYear = 2021
-reorderNavItems = ["posts"]

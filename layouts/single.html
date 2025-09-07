@@ -1,0 +1,13 @@
+{{ define "title" }}{{ .Title }} | {{ site.Title }}{{ end }}
+{{ define "main" }}
+<section class="section container">
+  <h1 class="title is-1 is-primary">{{ .Title }}</h1>
+  {{ partial "post/taxonomies.html" . }}
+  {{ partial "post/meta.html" . }}
+</section>
+<section class="section container">
+  <div class="content is-medium">
+    {{ .Content }}
+  </div>
+</section>
+{{ end }}

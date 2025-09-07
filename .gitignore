@@ -16,3 +16,5 @@ hugo.linux
 # jsconfig.json used to assist navigation
 # https://gohugo.io/hugo-pipes/js/
 /assets/jsconfig.json
+
+/node_modules
