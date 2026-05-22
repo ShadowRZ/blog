@@ -3,7 +3,7 @@ import { defineConfig, fontProviders } from 'astro/config';
 
 import UnoCSS from 'unocss/astro';
 import mdx from '@astrojs/mdx';
-import icon from 'astro-icon';
+import Icons from 'unplugin-icons/vite';
 import expressiveCode from 'astro-expressive-code';
 import sitemap from '@astrojs/sitemap';
 
@@ -25,9 +25,20 @@ export default defineConfig({
       themes: ['catppuccin-mocha', 'catppuccin-latte'],
     }),
     mdx(),
-    icon(),
     sitemap(),
   ],
+
+  vite: {
+    plugins: [
+      Icons({
+        compiler: 'astro',
+        iconCustomizer(collection, icon, props) {
+          props.width = '1em';
+          props.height = '1em';
+        },
+      }),
+    ],
+  },
 
   fonts: [
     {
