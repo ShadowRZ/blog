@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import Header from '../components/layouts/Header.astro';
+import HomeContainer from '../components/layouts/home/HomeContainer.astro';
+import HomePost from '../components/layouts/home/HomePost.astro';
+import Layout from '../layouts/Layout.astro';
+import { SITE_NAME, SITE_DESCRIPTION } from '@/consts';
+
+const posts = (await getCollection('posts')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<Layout title={SITE_NAME} description={SITE_DESCRIPTION}>
+  <Header />
+  <HomeContainer>
+    <main class='flex flex-col gap-4 my-16'>
+      {posts.map((post) => <HomePost {...post} />)}
+    </main>
+  </HomeContainer>
+</Layout>

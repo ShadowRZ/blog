@@ -1,0 +1,13 @@
+---
+import { Icon } from 'astro-icon/components';
+type Props = {
+  id: string;
+};
+
+const { id } = Astro.props;
+---
+
+<span class='inline-flex gap-2 items-center px-2 py-1 bg-ctp-mantle border-1 border-ctp-surface-0 rounded-2 text-ctp-text/75'>
+  <Icon name='lucide:folder' />
+  {id}
+</span>

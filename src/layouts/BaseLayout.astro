@@ -1,0 +1,16 @@
+---
+import { type CollectionEntry } from 'astro:content';
+import Head from '@/components/layouts/Head.astro';
+
+type Props = CollectionEntry<'posts'>;
+
+const head = Astro.props;
+---
+
+<!doctype html>
+<html lang='en'>
+  <Head {...head} />
+  <body class='flex flex-col min-h-screen bg-ctp-base text-ctp-text font-sans antialiased'>
+    <slot />
+  </body>
+</html>
