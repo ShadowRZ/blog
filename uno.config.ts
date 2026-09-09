@@ -6,9 +6,7 @@ export default defineConfig({
     presetWind4({
       dark: 'media',
     }),
-    presetCatppuccin({
-      defaultFlavour: 'latte',
-    }),
+    presetCatppuccin(),
     presetTypography({
       colorScheme: {
         body: ['inherit', 'inherit'],

@@ -3,7 +3,9 @@ import Link from '../shared/Link.astro';
 import FooterCommand from './footer/FooterCommand.astro';
 ---
 
-<footer class='relative w-full bg-ctp-mantle outline outline-t-1 outline-ctp-surface-0 px-4 md:px-16 lg:px-32 py-8 text-lg'>
+<footer
+  class='relative w-full bg-ctp-latte-mantle dark:bg-ctp-mocha-mantle border borderZ-t-1 border-ctp-latte-surface-0 dark:border-ctp-mocha-surface-0 px-4 md:px-16 lg:px-32 py-8 text-lg'
+>
   <p class='font-bold'>2021-2026 Yorusaka Miyabi</p>
   <p>Made with <Link href='https://astro.build'>{Astro.generator}</Link></p>
   <FooterCommand />

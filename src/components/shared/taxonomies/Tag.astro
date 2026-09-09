@@ -8,7 +8,9 @@ type Props = {
 const { id } = Astro.props;
 ---
 
-<span class='inline-flex gap-2 items-center px-2 py-1 bg-ctp-mantle border-1 border-ctp-surface-0 rounded-2 text-ctp-text/75'>
+<span
+  class='inline-flex gap-2 items-center px-2 py-1 bg-ctp-latte-mantle dark:bg-ctp-mocha-mantle border-1 border-ctp-latte-surface-0 dark:border-ctp-mocha-surface-0 rounded-2 text-ctp-latte-text/75 dark:text-ctp-mocha-text/75'
+>
   <Tag />
   <span>{id}</span>
 </span>
