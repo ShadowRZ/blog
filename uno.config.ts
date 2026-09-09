@@ -3,7 +3,9 @@ import presetCatppuccin from '@catppuccin/unocss';
 
 export default defineConfig({
   presets: [
-    presetWind4(),
+    presetWind4({
+      dark: 'media',
+    }),
     presetCatppuccin({
       defaultFlavour: 'latte',
     }),

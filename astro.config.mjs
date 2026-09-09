@@ -52,15 +52,15 @@ export default defineConfig({
   fonts: [
     {
       provider: fontProviders.fontsource(),
-      name: 'Outfit',
+      name: 'Fredoka',
       cssVariable: '--astro-font-sans',
-      weights: ['300 700'],
+      weights: ['300 400 700'],
     },
     {
       provider: fontProviders.fontsource(),
       name: 'Maple Mono',
       cssVariable: '--astro-font-mono',
-      weights: ['300 700'],
+      weights: ['400 700'],
     },
   ],
 });
