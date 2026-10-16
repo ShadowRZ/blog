@@ -11,7 +11,7 @@ const { id, title, description, categories, tags } = Astro.props;
   <BackCommand />
   <PostCommand id={id} />
   <h1 class='font-bold text-3xl md:text-4xl lg:text-5xl my-4 text-ctp-latte-flamingo dark:text-ctp-mocha-flamingo'>{title}</h1>
-  <span class='font-light text-lg md:text-xl lg:text-2xl'>{description}</span>
+  <span class='text-lg md:text-xl lg:text-2xl'>{description}</span>
   <section class='flex gap-2 mt-4'>
     {categories.map((category) => <Category id={category} />)}
     {tags.map((tag) => <Tag id={tag} />)}

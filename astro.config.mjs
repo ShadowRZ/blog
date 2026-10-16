@@ -51,16 +51,22 @@ export default defineConfig({
 
   fonts: [
     {
-      provider: fontProviders.fontsource(),
+      provider: fontProviders.google(),
       name: 'Fredoka',
       cssVariable: '--astro-font-sans',
-      weights: ['300 400 700'],
+      weights: ['400 700'],
+      styles: ['normal'],
+      subsets: ['latin'],
+      fallbacks: ["sans-serif"],
     },
     {
-      provider: fontProviders.fontsource(),
-      name: 'Maple Mono',
+      provider: fontProviders.google(),
+      name: 'Kode Mono',
       cssVariable: '--astro-font-mono',
-      weights: ['400 700'],
+      weights: [400],
+      styles: ['normal'],
+      subsets: ['latin'],
+      fallbacks: ["monospace"],
     },
   ],
 });
